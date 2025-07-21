@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okuper – Verified Homes Listings Only</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
+    </style>
+
+       <!-- Google tag (gtag.js) -->
+    <script 
+        async src="https://www.googletagmanager.com/gtag/js?id=G-Q66Y18Q4MT">
+    </script>
+
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q66Y18Q4MT');
+    </script>
+  </head>
+
+
+  <body class="body flex flex-col items-center justify-center min-h-screen relative">
+
+    <!-- Logo -->
+    <img
+      src="Images/Okuoer_White.png"
+      alt="Okuper Logo"
+      class="w-[120px] sm:w-[160px] -mt-10rem"
+    />
+
+    <!-- Caption -->
+    <h1 class="text-3xl sm:text-6xl font-semibold text-white -mt-20 mb-10">
+      We know you're in a hurry. So are we.
+    </h1>
+
+    <!-- Follow Text -->
+    <p class="text-lg text-white mb-6">
+      Follow Okuper on <span class="font-semibold">X, Instagram and TikTok</span><br />
+      to stay ahead for when we launch.
+    </p>
+
+    <!-- Social Icons -->
+    <div class="flex items-center justify-center space-x-6 text-white text-2xl">
+      <!-- X -->
+      <a href="https://x.com/okuper_" target="_blank" aria-label="Okuper on X">
+        <svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+          <path
+            d="M22.162 0H1.838C.823 0 0 .823 0 1.838v20.324C0 23.177.823 24 1.838 24h20.324C23.177 24 24 23.177 24 22.162V1.838C24 .823 23.177 0 22.162 0zM18.36 8.59l-3.504 3.47 4.935 6.94h-2.13l-3.97-5.586-4.533 4.533h-2.13l5.54-5.54-4.933-6.937h2.13l3.968 5.58 4.42-4.42h2.138v.002z"
+          />
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/okuper_" target="_blank" aria-label="Okuper on Instagram">
+        <svg viewBox="0 0 448 512" fill="currentColor" class="w-6 h-6">
+          <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,1,1-54-54A54,54,0,0,1,348.71,161.66ZM398.8,64H49.2A49.2,49.2,0,0,0,0,113.2V398.8A49.2,49.2,0,0,0,49.2,448H398.8A49.2,49.2,0,0,0,448,398.8V113.2A49.2,49.2,0,0,0,398.8,64ZM224,338.66A82.66,82.66,0,1,1,306.66,256,82.75,82.75,0,0,1,224,338.66ZM377.33,162A30.33,30.33,0,1,1,407.66,192.33,30.33,30.33,0,0,1,377.33,162ZM398.8,416H49.2A17.2,17.2,0,0,1,32,398.8V113.2A17.2,17.2,0,0,1,49.2,96H398.8a17.2,17.2,0,0,1,17.2,17.2V398.8A17.2,17.2,0,0,1,398.8,416Z"/>
+        </svg>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@okuper_" target="_blank" aria-label="Okuper on TikTok">
+        <svg fill="currentColor" viewBox="0 0 448 512" class="w-6 h-6">
+          <path d="M448,209.7v66.2a144.1,144.1,0,0,1-130.8-81.3V392.3A119.69,119.69,0,1,1,197.8,272.7V336a54.5,54.5,0,1,0,54.5,54.5V0h65.3a82.74,82.74,0,0,0,82.7,82.7V148A144.26,144.26,0,0,1,448,209.7Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="sky">
+        <script>
+            const rocketEl = document.querySelector('.rocket img');
+            const homeURL = 'https://img.icons8.com/ios-filled/100/home.png';
+            const rocketURL = 'https://www.freepik.com/icon/spaceship_6996871#fromView=search&page=1&position=79&uuid=24b44cb7-b884-4d80-88c3-a88026cb63fd';
+
+            let showingRocket = true;
+
+            setInterval(() => {
+                rocketEl.src = showingRocket ? homeURL : rocketURL;
+                showingRocket = !showingRocket;
+            }, 6000); // swap every 6 seconds
+        </script>
+
+        <div class="rocket">
+            <img src="Images/clipart1123035.png" alt="Rocket" />
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <p class="mt-10 text-sm text-gray-400">©️ 2025 Okuper. All rights reserved.</p>
+  
+  
+</body>
+</html>

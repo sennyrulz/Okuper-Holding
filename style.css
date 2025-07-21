@@ -1,0 +1,41 @@
+.body {
+    background-color: rgb(0, 0, 142);
+    background-repeat: none;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+  .rocket {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: launch 5s ease-in-out infinite;
+  }
+
+  .rocket img {
+    width: 80px;
+  }
+
+  @keyframes launch {
+    0% {
+      bottom: -100px;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      bottom: 60%;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      bottom: 110%;
+      opacity: 0;
+    }
+  }
+
